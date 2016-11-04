@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified Bootstrap CSS --> <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>viewer page</title>
+</head>
+
+<body>
+<!--SMALL WINDOW, I.E. "MODAL"-->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>QuickAnnotate!</h2>
+    </div>
+    <div class="modal-body">
+      <p>Selection:</p>
+      <textarea id="sel" rows="3" cols="50"></textarea>
+
+      <p><a href="http://modernism.gistemp.com/omeka/admin/neatline/editor/1#edit/new"
+      target="_blank">(1) Create your annotation on the map.</a><br \>Instructions for creating a new record</p>
+      <p><a href="http://modernism.gistemp.com/omeka/admin/neatline/edit/1"
+      target="_blank">(2) Apply your annotation to this text.</a><br \>
+      <b>On the edit page:</b><br \>
+      - Select the option <b>Source</b> above the "long-format prose narrative."<br \>This will present you with the narrative as "source code."<br \><br \>
+      - Hold down COMMAND + F. This will bring up a <b>Find</b> bar.<br \>Input the text for which you have created an annotation, and hit Enter.<br \>Your text will appear highlighted in the narrative.<br \><br \>
+      - Substitute the following formula in for the highlighted text:<br \><b>&lt;span&gt;data-neatline-slug=YOUR SLUG GOES HERE>THE TEXT GOES HERE&lt;/span&gt;</b>.</p>
+      <!--
+      <p><a href="http://modernism.gistemp.com/omeka/admin/neatline/editor/1"
+      target="_blank">View All Annotations</a></p>
+      <p><a href="http://modernism.gistemp.com/omeka/admin/users/login"
+      target="_blank">RMC Login</a></p>
+    -->
+    </div>
+    <div class="modal-footer">
+      <!-- <h3>Modal Footer</h3> -->
+    </div>
+  </div>
+</div>
+
+<!-- IRRELEVANT TEST CONTENT -->
+<h2>This Is Not a Story</h2> 
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab libero, cupiditate veniam officiis itaque in porro iure fugit iusto reprehenderit commodi earum cum blanditiis quos error similique quod, facere! Hic.</p>
+<!-- END OF IRRELEVANT TEST CONTENT -->
+
+<!-- Bootstrap jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
