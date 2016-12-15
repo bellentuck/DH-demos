@@ -6,7 +6,7 @@ Template Name: Fan Page
 
 get_header(); ?>
 
-<div class="wrapper section-inner-rt">						
+<div class="wrapper section-inner" id="rt-background">						
 
 	<div class="content left">
 	
@@ -40,13 +40,13 @@ get_header(); ?>
 						
 				<?php endif; ?>
 														
-				<div class="post-header-rt">
+				<div class="post-header" id="rt-header">
 											
-				    <h1 class="post-title-rt"><?php the_title(); ?></h1>
+				    <h1 class="post-title" id="rt-post-title"><?php the_title(); ?></h1>
 				    				    
 			    </div> <!-- /post-header -->
 			   				        			        		                
-				<div class="post-content">
+				<div class="post-content" id="rt-content">
 							                                        
 					<?php the_content(); ?>
 					

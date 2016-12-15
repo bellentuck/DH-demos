@@ -3,7 +3,7 @@ Theme Name: Hemingway Child Theme
 Description: Tout Le Monde theme customization
 Author: Ben Ellentuck
 Template: hemingway
-Version: 0.1.0
+Version: 0.1.1
 */
 
 @import url("../hemingway/style.css");
@@ -11,25 +11,43 @@ Version: 0.1.0
 
 /* customized fan page */
 
-.post-title-rt {
+#rt-post-title, #rt-content {
 	background: #EEEEEE; /* rotten tomatoes light grey */
+	margin: 0 auto; 
+	width: 80%;
 }
 
-.post-header-rt {
+#rt-post-title {
+	line-height: 160%;
+	text-align: center;
+}
+
+#rt-header {
 	background-color: #3A9425;  /* rotten tomatoes green */
-	padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    border-radius: 2px;
+	padding: 15px 30px;
+    	border-radius: 2px;
+	margin: 0 auto;
+	margin-top: .25px; 
+	width: 153.75%;
 
 }
 
-wrapper.section-inner-rt {
+#rt-background {
+	background-color: #EEEEEE; /* rotten tomatoes light grey */
 	border: 1px solid #3A9425;
-    border-radius: 5px;
-	padding: 30px;
+    	border-radius: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+	width: 100%;
 }
 
+#rt-img {
+	
+    	display: block;
+    	width: 20%;
+}
 
 
 
