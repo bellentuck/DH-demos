@@ -45,6 +45,9 @@ function getSelectionText() {
     }
     return text;
 }
+
+//var the_text = "";
+
 document.onmouseup = document.onkeyup = document.onselectionchange = function() {
   document.getElementById("sel").value = getSelectionText();
   var the_text = document.getElementById("sel").value;
@@ -52,3 +55,42 @@ document.onmouseup = document.onkeyup = document.onselectionchange = function() 
   // Temporarily store the highlighted text (to be put into a new annotation entry)
   localStorage.the_text = the_text;
 };
+
+// window.onload = function() {
+//        //when the document is finished loading, replace everything
+//        //between the <a ...> </a> tags with the value of splitText
+//    document.getElementById("selection").innerHTML = the_text;
+// };
+
+
+
+
+
+// //I.
+// function getSelText() {
+//     var txt = '';
+//      if (window.getSelection) {
+//         txt = window.getSelection();
+//      } else if (document.getSelection) {
+//         txt = document.getSelection();
+//      } else if (document.selection) {
+//         txt = document.selection.createRange().text;
+//      } else return;
+// console.log(txt);
+// }
+
+//I.
+var paragraphs = document.querySelectorAll('#neatline-narrative p');
+//II.
+for(i=0; i<paragraphs.length; i++) {
+    paragraphs[i].addEventListener("mouseup", function(e) {
+        console.log(e.target);
+    }, false);
+}
+
+
+
+
+document.getElementsByTagName("p").addEventListener("select", function(e) {
+    console.log(e.target);
+}, false);
